@@ -1,0 +1,37 @@
+{
+  "name": "rwwp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "Dependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.4",
+    "file-loader": "^0.11.2",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0"
+  },
+  "dependencies": {
+    "react-document-title": "^2.0.3",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.1",
+    "react-sidebar": "^2.3.2",
+    "reactable": "^0.14.1",
+    "redux": "^3.7.1",
+    "redux-saga": "^0.15.4"
+  }
+}

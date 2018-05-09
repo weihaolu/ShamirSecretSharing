@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript" src = nearestNeighbor.js></script>
+<script type="text/javascript">
+
+    var lTestInstances = randomTrainingInstances(10);
+
+    for(var i=0; i<lTestInstances.length; i++){
+
+        for(var p=0; p<lTestInstances[i].length; p++){
+
+            document.write(lTestInstances[i][p]+",");
+        }
+        document.write("<br/>");
+    }
+
+    var lMap = {}
+
+    lMap["Test"] = 2;
+
+    var lArray = [];
+
+    var lTuple1 = [];
+    var lTuple2 = [];
+    var lTuple3 = [];
+    lTuple1[0] = lTestInstances[0];
+    lTuple1[1] = 3;
+    lTuple2[0] = lTestInstances[1];
+    lTuple2[1] = 2;
+    lTuple3[0] = lTestInstances[2];
+    lTuple3[1] = 1;
+
+    lArray.push(lTuple1);
+    lArray.push(lTuple2);
+    lArray.push(lTuple3);
+
+    sortArrayWithTuples(lArray);
+
+    var lTestInstance = [55,"male","no"];
+
+    var Klassifier = new NearestNeighbor(lTestInstances,lTestInstance,3);
+
+    var nearestNeighbors = Klassifier.getNearestNeighbors();
+
+    document.write("NearestNeighbors:<br/>");
+    for(var i=0; i<nearestNeighbors.length; i++){
+
+        for(var p=0; p<nearestNeighbors[i][0].length; p++){
+
+            document.write((nearestNeighbors[i][0])[p]+",");
+           
+        }
+        document.write((nearestNeighbors[i][1]));
+        document.write("<br/>");
+    }
+
+    document.write(Klassifier.getWinner(nearestNeighbors));
+
+</script>
+</body>
+</html>

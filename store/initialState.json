@@ -1,0 +1,12 @@
+{
+    "buttonState":"",
+    "trainingInstancesDiv":"",
+    "nearestNeighborsDiv":"",
+    "predictionDiv":"", 
+    "age": "",
+    "sex": "männlich",
+    "martialStatus": "ledig",
+    "salary": "30Tsd-50Tsd",
+    "numberOfInstances": "",
+    "k": ""
+}

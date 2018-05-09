@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript" src = mergesort.js></script>
+<script type="text/javascript">
+
+var linkedList = new LinkedList();
+
+
+linkedList.append(9);
+linkedList.append(10);
+linkedList.append(9);
+linkedList.append(5);
+linkedList.append(3);
+linkedList.append(1);
+
+document.write(linkedList.toString());
+
+var sortedList = mergeSort(linkedList);
+
+document.write("<br/>" + sortedList.toString());
+
+</script>
+</body>
+</html>
